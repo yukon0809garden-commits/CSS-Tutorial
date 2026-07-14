@@ -1,28 +1,33 @@
-/* 1. html要素の文字サイズを24pxで宣言 */
-html {
-  font-size: 24px;
-}
-
-/* 2. h1要素：文字色を白色、背景色を青色、サイズを24px(1rem) */
-h1 {
-  color: #ffffff;
-  background-color: blue;
-  font-size: 1rem;
-}
-
-/* 3. h3要素：背景色を深緑、サイズを18px(0.75rem) */
-h3 {
-  background-color: rgb(0, 100, 0);
-  font-size: 0.75rem;
-}
-
-/* 4. p要素：文字色を群青、サイズを12px(0.5rem) */
+/* ==========================================
+   p要素のスタイル設定
+   ========================================== */
 p {
-  color: #000080;
-  font-size: 0.5rem;
+  background-color: blue;
+  color: white; /* デフォルトは白色 */
 }
-
-/* 5. p要素内の「色（span）」の文字のみ文字色を赤色 */
-p span {
+.text-yellow {
+  color: yellow;
+}
+.text-red {
   color: red;
 }
+
+/* ==========================================
+   li要素のスタイル設定（マルチクラス設計）
+   ========================================== */
+/* 全li共通のベーススタイル */
+li {
+  font-size: 16px; 
+}
+
+/* 文字色クラス */
+.text-blue { color: blue; }
+/* .text-yellow と .text-red は上記p要素のものをそのまま共通利用 */
+
+/* 背景色クラス */
+.bg-gray { background-color: gray; }
+.bg-green { background-color: green; }
+.bg-brown { background-color: brown; }
+
+/* 文字サイズ変更（例外用） */
+.f-12 { font-size: 12px; }
