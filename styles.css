@@ -1,33 +1,22 @@
 /* ==========================================
-   p要素のスタイル設定
+   クラス content 内の子孫セレクター
    ========================================== */
-p {
-  background-color: blue;
-  color: white; /* デフォルトは白色 */
+/* contentクラスの中にあるh2要素 */
+.content h2 {
+  font-size: 32px;
+  color: #6B8E23;
 }
-.text-yellow {
-  color: yellow;
-}
-.text-red {
-  color: red;
+
+/* contentクラスの中にあるp要素 */
+.content p {
+  font-size: 20px;
+  color: #20B2AA;
 }
 
 /* ==========================================
-   li要素のスタイル設定（マルチクラス設計）
+   クラス side 内の隣接セレクター
    ========================================== */
-/* 全li共通のベーススタイル */
-li {
-  font-size: 16px; 
+/* sideクラスの中にあるh3要素の「真下（直後）にあるp要素」のみを指定 */
+.side h3 + p {
+  color: red;
 }
-
-/* 文字色クラス */
-.text-blue { color: blue; }
-/* .text-yellow と .text-red は上記p要素のものをそのまま共通利用 */
-
-/* 背景色クラス */
-.bg-gray { background-color: gray; }
-.bg-green { background-color: green; }
-.bg-brown { background-color: brown; }
-
-/* 文字サイズ変更（例外用） */
-.f-12 { font-size: 12px; }
