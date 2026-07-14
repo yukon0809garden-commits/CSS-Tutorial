@@ -1,7 +1,28 @@
-h1 {
-  color: blue;
+/* 1. html要素の文字サイズを24pxで宣言 */
+html {
+  font-size: 24px;
 }
 
+/* 2. h1要素：文字色を白色、背景色を青色、サイズを24px(1rem) */
+h1 {
+  color: #ffffff;
+  background-color: blue;
+  font-size: 1rem;
+}
+
+/* 3. h3要素：背景色を深緑、サイズを18px(0.75rem) */
+h3 {
+  background-color: rgb(0, 100, 0);
+  font-size: 0.75rem;
+}
+
+/* 4. p要素：文字色を群青、サイズを12px(0.5rem) */
 p {
-  color: green;
+  color: #000080;
+  font-size: 0.5rem;
+}
+
+/* 5. p要素内の「色（span）」の文字のみ文字色を赤色 */
+p span {
+  color: red;
 }
